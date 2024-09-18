@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* .time-line {
+    width: 100%;
+    height: 4px;
+    background-color: brown;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: scrolling infinite;
+    animation-timeline: scroll();
+}
+
+@keyframes scrolling {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+} */
+
+.time-line {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    color: black;
+    background-color: #c9c90a;
+    animation: tracker  linear;
+    animation-timeline: scroll();
+    z-index: 100;
+}
+
+@keyframes tracker {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Landing page */
+
+.landing-page {
+    position: relative;
+    width: 100;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.722);
+    overflow: hidden;
+}
+
+.landing-page img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.bar {
+ position: relative;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.landing-page .nav-bar {
+  position: sticky;
+  width: 85%;
+  height: 8vh;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(247, 247, 247);
+  margin: auto;
+ overflow: hidden;
+ border-radius: 8px;
+ transition: all 0.4s ease-in-out;
+ z-index: 100;
+}
+
+
+.landing-page .nav-bar .logo {
+    font-size: 1.2rem;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.logo span ion-icon{
+    display: none;
+
+}
+
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 13px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.landing-page .hire-me a {
+    background-color: rgb(97, 109, 99);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 3px soild black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .landing-page .hire-me a:hover {
+       background-color: transparent;
+       border: 1px solid black;
+       color: black;
+   }
+
+/* landing brevity */
+
+.landing-page .brevity {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.brevity p, h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.brevity p span {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.brevity h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+}
+
+
+.brevity .read-btn {
+    margin-top: 50px;
+}
+
+.brevity .read-btn a {
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.about-me {
+    width: 100%;
+    height: 150vh;
+    background-color: brown;
+}
+
+@media screen and (max-width: 1091px) {
+    .landing-page .nav-bar {
+        position: fixed;
+        margin: auto;
+        top: 40px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        height: 7vh;
+        padding: 6px 25px;
+      }
+
+      .nav-bar.dropped {
+        height: 450px;
+      }
+
+      .landing-page .nav-bar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1px;
+        height: 5vh;
+      }
+
+      .landing-page .nav-bar .logo h1 {
+        font-size: 1.3rem;
+      }
+
+      .logo span ion-icon {
+        display: block;
+        font-size: 2rem;
+    }
+
+      .nav-bar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .nav-bar ul li {
+        margin-top: 20px;
+    }
+
+    .landing-page .hire-me {
+        margin-bottom: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 474px) {
+    .landing-page .brevity {
+        top: 30%;
+        line-height: 35px;
+        padding: 25px;
+    }
+
+    .brevity p, h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .brevity p span {
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-weight: 500;
+    }
+    
+    .brevity h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+    
+    
+    .brevity .read-btn a{
+        margin-top: 60px;
+        padding: 10px;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 361px) {
+    .landing-page .brevity {
+        top: 23%;
+        line-height: 25px;
+        padding: 15px;
+    }
+
+    .landing-page .nav-bar {
+        top: 3%;
+    }
+
+    .brevity .read-btn a{
+        margin-top: 30px;
+    }
+
+    .brevity p, h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .brevity p span {
+        font-size: 1rem;
+        font-weight: 400;
+        font-weight: 500;
+    }
+    
+    .brevity h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+     }

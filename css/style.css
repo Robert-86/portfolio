@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* all sections*/
+section {
+    padding: 80;
+}
+
+/* introduction  */
+.introduction  {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.818) 50%,  rgba(0, 0, 0, 0.818) 70%, rgba(0, 0, 0, 0.818) 100%), url("../pictures/zack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px;
+    background-attachment: fixed;
+}
+
+.main-nav {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.introduction .navy {
+    position: fixed;
+    top: 35px;
+    background: whitesmoke;
+    margin: auto;
+    display: flex;
+    padding: 15px 25px;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 13px;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.637);
+} 
+
+
+.logo .menu {
+ display: none;
+}
+
+.navy ul {
+    display: flex;
+}
+
+.navy ul li {
+    list-style: none;
+    margin-left: 17px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Quicksand',  sans-serif;
+} 
+
+.navy ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navy .hire-me {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border:  1px solid black;
+}
+
+.navy .hire-me a {
+    display: flex;
+    place-content: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font: bold;
+}
+
+/* check-up */
+.check-up {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.check-up p {
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.check-up p span {
+    font-size: 1.8rem;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.check-up h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.check-up .read-more {
+    margin-top: 95px;   
+}
+
+.check-up .read-more a {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.check-up .read-more a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.namey {
+    width: 100%;
+    height: 240vh;
+    background-color: rgb(171, 172, 174);
+}
+
+
+
+
+/* @media screen and (max-width: 950px ) and (min-width:44px) {
+    .navy ul {
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .introduction .navy {
+        background: whitesmoke;
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 40px;
+        height: 9vh;
+        overflow: hidden;
+        transition: all .4s ease-in-out;
+    }
+
+    .navy.dropped {
+        height: 390px;
+        transition: all .4s ease-in-out;
+    }
+   
+    .navy ul  {
+        margin-top: 10px; 
+    }
+    .navy ul li {
+        margin-bottom: 6px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: 'Quicksand',  sans-serif;
+    }
+
+
+    .navy .logo {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blue;
+    } 
+    
+    .logo .menu {
+     font-weight: 500;
+     font-size: 1.5rem;
+     display: block;
+    }
+
+    .navy .hire-me {
+        margin-top: 27px;
+    }
+
+}
+
+@media screen and (max-width: 720px ) {
+
+    .introduction  {
+      padding: 35px;
+    }
+  .check-up {
+    margin-top: 240px;
+  }
+    
+    .check-up p {
+        font-size: 1.2rem;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+    }
+    
+    .check-up p span {
+        font-size: 1.2rem;
+        font-weight: 450;
+        text-transform: uppercase;
+    }
+    
+    .check-up h1 {
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    
+} */
+
+/* 
+@media screen and (max-width: 520px ) {
+
+   .introduction {
+     padding: 57px 30px;
+   }
+
+    .navy ul {
+        display: flex;
+        flex-direction: column;
+    }  
+
+
+    .navy ul  {
+        margin-top: 30px; 
+    }
+    .navy ul li {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: 'Quicksand',  sans-serif;
+    }
+
+    .navy .logo {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    
+    .logo .menu {
+     font-weight: 500;
+     font-size: 1.5rem;
+     display: block;
+    }
+
+    .navy .hire-me {
+        margin-top: 27px;
+    }
+
+    .check-up {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .check-up p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .check-up p span {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+  
+    @media screen and (max-width: 363px )  {
+        .check-up {
+            margin-top: 120px;
+        }
+    
+    }
+
+} */
+
+/* @media screen and (max-width: 382px )  {
+
+    .introduction {
+        padding: 15px;
+    }
+    .check-up {
+        background-color: brown;
+      }
+        
+        .check-up p {
+            font-size: 1rem;
+          font-weight: 400;
+        }
+        
+        .check-up p span {
+            font-size: 1rem;
+            font-weight: 450;
+            text-transform: uppercase;
+        }
+        
+        .check-up h1 {
+            color: white;
+            font-weight: 400;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+} */
+
+@media screen and (max-width: 950px) {
+    .navy ul {
+        flex-direction: column;
+    }
+
+    .introduction .navy {
+        padding: 10px 25px;
+        height: 9vh;
+    }
+
+    .navy.dropped {
+        height: 390px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .introduction {
+        padding: 35px;
+    }
+
+    .check-up {
+        margin-top: 240px;
+    }
+
+    .check-up h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .introduction {
+        padding: 15px;
+    }
+
+    .check-up {
+        margin-top: 120px;
+    }
+
+    .check-up h1 {
+        font-size: 1.2rem;
+    }
+}
