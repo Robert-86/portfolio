@@ -41,7 +41,8 @@ section {
 .landing-page {
     position: relative;
     width: 100;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.722);
     overflow: hidden;
 }
@@ -135,11 +136,15 @@ section {
 /* landing brevity */
 
 .landing-page .brevity {
-    position: absolute;
     width: 100%;
-    top: 35%;
+    height: 75vh;
+    margin-top: 10vh;
     text-align: center;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .brevity p, h4 {
@@ -342,9 +347,10 @@ section {
 
 @media screen and (max-width: 474px) {
     .landing-page .brevity {
-        top: 30%;
+        top: 10vh;
         line-height: 35px;
         padding: 25px;
+        height: 55vh;
     }
 
     .brevity p, h4 {
